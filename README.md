@@ -4,7 +4,7 @@ A modern React e-commerce website built as my SheCanCode Frontend Capstone Proje
 
 ## Live Demo
 
-https://your-vercel-link.vercel.app
+https://my-capstone-project-eta.vercel.app/
 
 ## Features
 
