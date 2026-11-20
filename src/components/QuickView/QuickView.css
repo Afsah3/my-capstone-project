@@ -1,0 +1,284 @@
+.quickview-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+
+  padding: 20px;
+}
+
+
+.quickview {
+  width: 100%;
+  max-width: 900px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 35px;
+
+  padding: 35px;
+
+  position: relative;
+
+  animation: popup 0.3s ease;
+}
+
+
+@keyframes popup {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.close-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: #f3f4f6;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.close-btn:hover {
+  background: #e5e7eb;
+}
+
+
+.quickview-image {
+  background: #f9fafb;
+
+  border-radius: 15px;
+
+  height: 400px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+.quickview-image img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.quickview-info {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.quickview-info > p:first-child {
+
+  color: #16a34a;
+
+  font-weight: 700;
+
+}
+
+
+.quickview-info h2 {
+
+  font-size: 32px;
+
+  color: #1f2937;
+
+  margin: 10px 0;
+
+}
+
+
+.quick-rating {
+
+  display: flex;
+
+  gap: 5px;
+
+  margin-bottom: 20px;
+
+}
+
+
+.quickview-info h3 {
+
+  color: #16a34a;
+
+  font-size: 28px;
+
+  margin-bottom: 15px;
+
+}
+
+
+.quickview-info p {
+
+  color: #6b7280;
+
+  line-height: 1.7;
+
+}
+
+
+.quick-buttons {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+
+}
+
+
+.quick-buttons button {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #16a34a;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+.quick-buttons button:hover {
+
+  background: #15803d;
+
+}
+
+
+.quick-buttons button:nth-child(2) {
+
+  width: 50px;
+
+  padding: 0;
+
+}
+
+
+.quick-buttons a {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 20px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  background: #f3f4f6;
+
+  color: #1f2937;
+
+  font-weight: 600;
+
+}
+
+
+.quick-buttons a:hover {
+
+  background: #e5e7eb;
+
+}
+
+
+@media (max-width: 800px) {
+
+  .quickview {
+
+    grid-template-columns: 1fr;
+
+    padding: 25px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+  }
+
+
+  .quickview-image {
+
+    height: 300px;
+
+  }
+
+
+  .quickview-info h2 {
+
+    font-size: 25px;
+
+  }
+
+
+  .quick-buttons {
+
+    flex-direction: column;
+
+  }
+
+}

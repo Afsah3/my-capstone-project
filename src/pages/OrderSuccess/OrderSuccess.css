@@ -1,0 +1,56 @@
+.order-success {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.success-card h1 {
+  color: #16a34a;
+  margin-bottom: 15px;
+}
+
+.success-card p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.success-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-btn,
+.shop-btn {
+  text-decoration: none;
+  color: white;
+  background: #16a34a;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.home-btn:hover,
+.shop-btn:hover {
+  background: #15803d;
+}

@@ -1,0 +1,106 @@
+.flash-sale {
+  padding: 80px;
+  background: #fff7ed;
+}
+
+.flash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.flash-header h2 {
+  color: #1f2937;
+  font-size: 38px;
+}
+
+.flash-header button {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.flash-header button:hover {
+  background: #ea580c;
+}
+
+.flash-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #1F2937;
+    font-size: 38px;
+}
+
+.flash-title svg {
+    color: #F97316;
+}
+
+.view-all-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #16a34a;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background: #15803d;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0;
+  color: #1f2937;
+}
+
+.product-card p {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #15803d;
+}

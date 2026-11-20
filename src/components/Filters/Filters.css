@@ -1,0 +1,88 @@
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 22px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.filters-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #16A34A;
+}
+
+.filters-title h3 {
+  color: #1F2937;
+  font-size: 17px;
+  margin: 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.filter-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.filter-group select {
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1F2937;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-group select:focus {
+  border-color: #16A34A;
+}
+
+.reset-filters {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #16A34A;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-self: flex-end;
+}
+
+.reset-filters:hover {
+  background: #15803D;
+}
+
+@media (max-width: 600px) {
+  .filters-container {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+
+  .reset-filters {
+    align-self: stretch;
+  }
+}
